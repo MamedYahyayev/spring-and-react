@@ -1,0 +1,69 @@
+.todo {
+    border: 3px solid #ccc;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    transition: box-shadow .4s;
+}
+
+.todo:hover {
+    box-shadow: 1px 1px 13px #aaaaaa;
+}
+
+.more-info {
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.more-info:hover {
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.todo-header {
+    transition: text-decoration 4s ease-in-out;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.delete {
+    transition: display 4s ease-in-out;
+    display: none;
+}
+
+.todo-actions i {
+    margin-right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: font-size .3s ease-in-out;
+}
+
+.todo-actions i:hover {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 500px) {
+    .todo {
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        padding: 20px;
+    }
+
+    .todo-header {
+        text-align: center;
+    }
+
+    .todo-header > h1 {
+        width: 70vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}

@@ -1,0 +1,33 @@
+.modal {
+    align-items: center;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 40;
+    margin: 0 auto;
+}
+
+.modal-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.message-section {
+    display: flex;
+    align-items: center;
+}
+
+.message-section i {
+    font-size: 40px;
+    color: red;
+    margin-right: 10px;
+}
+
+.message-section p {
+    font-size: 20px;
+    font-family: Monaco, serif;
+}

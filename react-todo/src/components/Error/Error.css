@@ -1,0 +1,25 @@
+.error-box {
+    width: 500px;
+    height: 400px;
+    box-shadow: 2px 3px #aaaaaa;
+    border: 1px solid black;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.error-number {
+    font-size: 150px;
+}
+
+.login-text {
+    font-size: 25px;
+    text-decoration: underline;
+    transition: font-size .3s;
+}
+
+.login-text:hover {
+    transition: font-size .3s;
+    font-size: 30px;
+    text-decoration: underline;
+}

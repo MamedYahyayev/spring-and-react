@@ -1,0 +1,28 @@
+[
+  {
+    "todoName": "Create Application",
+    "todoDescription": "Create Spring Boot and React Application",
+    "todoDate": "2020-10-17",
+    "account": {
+      "accountId": 1
+    }
+  },
+
+  {
+    "todoName": "Read Docs",
+    "todoDescription": "Read Redux docs for state management",
+    "todoDate": "2020-10-18",
+    "account": {
+      "accountId": 1
+    }
+  },
+
+  {
+    "todoName": "Do Practice",
+    "todoDescription": "Do practice in Plain JS",
+    "todoDate": "2020-10-20",
+    "account": {
+      "accountId": 1
+    }
+  }
+]

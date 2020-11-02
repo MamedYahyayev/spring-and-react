@@ -1,0 +1,73 @@
+.container {
+    margin: 40px auto;
+}
+
+.todo_detail {
+    background: #d0cece;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.go_back_action {
+    margin: 10px;
+    padding: 4px 40px;
+    border: 1px solid #989696;
+    border-radius: 10px;
+}
+
+.go_back_action i {
+    font-size: 30px;
+    transition: all .6s ease-in-out;
+}
+
+.go_back_action:hover i {
+    cursor: pointer;
+    transform: translateX(-20px);
+}
+
+.go_back_action:hover i:after {
+    content: " Back";
+}
+
+.name-area {
+    margin: 20px;
+    width: 350px;
+}
+
+.date-area {
+    margin: 20px;
+    width: 350px;
+}
+
+.text_description {
+    margin: 20px;
+    width: 500px;
+}
+
+
+.todo-action {
+    margin: 5px;
+    display: flex;
+}
+
+.todo-action i {
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: font-size .3s ease-in-out;
+}
+
+.todo-action i:hover {
+    font-size: 35px;
+}
+
+@media screen and (max-width: 500px) {
+    .detail-end {
+        flex-direction: column;
+    }
+
+}

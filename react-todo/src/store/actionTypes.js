@@ -1,0 +1,10 @@
+export const REGISTER_ACCOUNT = "REGISTER_ACCOUNT";
+export const LOGIN_ACCOUNT = "LOGIN_ACCOUNT";
+export const LOGOUT_ACCOUNT = "LOGOUT_ACCOUNT";
+export const GET_ACCOUNT = "GET_ACCOUNT";
+export const GET_TODO_BY_ID = "GET_TODO_BY_ID";
+export const ADD_TODO = "ADD_TODO";
+export const DONE_TODO = "DONE_TODO";
+export const GET_TODOS = "GET_TODOS";
+export const DELETE_TODO = "DELETE_TODO";
+export const UPDATE_TODO = "UPDATE_TODO";

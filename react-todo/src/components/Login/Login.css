@@ -1,0 +1,26 @@
+.login-form {
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #aaa;
+    font-size: 18px;
+    box-shadow: 4px 3px #aaaaaa;
+}
+
+.login-form #register-link {
+    border-bottom: 1px solid #000;
+    display: block;
+}
+
+.login-form #register-link:hover {
+    cursor: pointer;
+    color: #000000;
+}
+
+
+@media screen and (max-width: 500px) {
+    .login-form {
+        width: 350px;
+        font-size: 15px;
+    }
+}
