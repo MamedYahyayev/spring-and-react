@@ -8,6 +8,7 @@
         <version>2.3.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <packaging>jar</packaging>
     <groupId>az.maqa.spring.react.todolistapp</groupId>
     <artifactId>todolist-app</artifactId>
     <version>1.0.0</version>
