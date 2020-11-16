@@ -1,14 +1,14 @@
 import React, {Fragment, useEffect, useState} from "react";
-import DatePicker from "@bit/nexxtway.react-rainbow.date-picker";
 import './TodoDetail.css';
 import {Modal} from "../Modal/Modal";
 import {useStore} from "../../store/Provider";
 import {deleteTodo, doneTodo, updateTodoByTodoId} from "../../store/todoActions";
 import {withRouter} from 'react-router-dom';
 
+
 const TodoDetail = (props) => {
 
-    const [store, dispatch] = useStore();
+    const [dispatch] = useStore();
 
     const [todo, setTodo] = useState({
         id: 0,
@@ -40,7 +40,7 @@ const TodoDetail = (props) => {
 
 
     const changeTodoName = e => setTodo({...todo, todoName: e.target.value});
-    const changeTodoDate = value => setTodo({...todo, todoDate: value});
+    const changeTodoDate = (e) => setTodo({...todo, todoDate: e.target.value});
     const changeTodoDescription = e => setTodo({...todo, todoDescription: e.target.value});
 
     const updateTodoHandler = () => setUpdate(true);
@@ -107,7 +107,8 @@ const TodoDetail = (props) => {
 
                     <div className="date-area is-flex is-align-items-center">
                         <label className="mr-4 is-size-3">Date </label>
-                        <DatePicker
+                        <input
+                            type="date"
                             value={todo.todoDate}
                             disabled={!update}
                             onChange={changeTodoDate}
@@ -135,6 +136,3 @@ const TodoDetail = (props) => {
 }
 
 export default withRouter(TodoDetail)
-
-// import moment from 'moment';
-// const todoDate = moment(props.todo.todoDate).format("DD-MMMM-YYYY HH:24");

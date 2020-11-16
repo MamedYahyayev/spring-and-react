@@ -1,12 +1,10 @@
 import React, {useState} from 'react';
-import DatePicker from '@bit/nexxtway.react-rainbow.date-picker';
 import {useStore} from "../../store/Provider";
 import {addTodo} from "../../store/todoActions";
 
-
 const TodoForm = (props) => {
 
-    const [store, dispatch] = useStore();
+    const [dispatch] = useStore();
 
     const [todo, setTodo] = useState({
         todoName: "",
@@ -16,7 +14,7 @@ const TodoForm = (props) => {
 
     const changeTodoName = (e) => setTodo({...todo, todoName: e.target.value})
     const changeDescription = (e) => setTodo({...todo, todoDescription: e.target.value})
-    const changeTodoDate = value => setTodo({...todo, todoDate: value})
+    const changeTodoDate = (e) => setTodo({...todo, todoDate: e.target.value})
 
     const createTodoSubmitHandler = (e) => {
         e.preventDefault();
@@ -39,7 +37,8 @@ const TodoForm = (props) => {
                 </div>
                 <div className="is-flex is-inline-block-mobile is-justify-content-space-between">
                     <div className={datePickerStyle}>
-                        <DatePicker
+                        <input
+                            type="date"
                             value={todo.todoDate}
                             onChange={changeTodoDate}
                         />
